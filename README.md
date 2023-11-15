@@ -6,4 +6,5 @@
 6. Setelah itu silahkan logout dan mengganti ke akun approver dengan urutan sesuai orderan yang dibuat
 7. jika sudah approver pertama akan dapat melakukan action approve untuk list order yang dilakukan
 8. Jika approver pertama sudah melakukan approve maka silahkan login ke akun approver ke dua, maka approver kedua dapat melakukan approve setelah dilakukan persetujuan dari approver pertama.
-9. Jika approver kedua sudah menyetujui maka pemesanan kendaraan sudah bisa diproses/diberlakukan.
+9. Jika approver kedua sudah menyetujui maka grafik kendaraan dan jumlah kendaraan tersebut yang terpakai dapat dilihat (artinya pemesanan kendaraan sudah bisa diproses/diberlakukan).
+10. Grafik bisa didownload berupa file excell dengan melakukan click pada icon report yang ada di sidebar

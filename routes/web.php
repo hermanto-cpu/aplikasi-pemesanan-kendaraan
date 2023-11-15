@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\RegisterController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::get('/register', [RegisterController::class, 'create'])->middleware('gues
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/download-excel', [DashboardController::class, 'downloadExcel'])->middleware('auth');
 
 Route::post('/dashboard/approve', [ViewController::class, 'first_approve'])->middleware('auth');
 Route::get('/dashboard/action', [ViewController::class, 'index'])->middleware('auth')->name('dashboard.action');

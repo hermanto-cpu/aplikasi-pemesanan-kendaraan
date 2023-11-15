@@ -237,7 +237,7 @@
             </form>
             @endif
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <a class="nav-link d-flex align-items-center gap-2" href="{{ url('/dashboard/download-excel') }}">
                 <svg class="bi"><use xlink:href="#graph-up"/></svg>
                 Reports
               </a>
@@ -329,7 +329,8 @@
               @endif
               <h2 class="h2">Halo {{ auth()->user()->username }}, Grafik pemesanan dapat dilihat dibawah ini:</h2>
             </div>
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            <canvas class="my-4 w-100" id="myChart" width="900" height="380" data-chart="{{ json_encode($chartData) }}"></canvas>
+            <a href="{{ url('/dashboard/download-excel') }}" class="btn btn-success">Download Excel</a>
     </main>
   </div>
 </div>
